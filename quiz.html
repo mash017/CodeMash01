@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMash - Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="playground.html">Playground</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="#">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="quiz-container">
+      <h2>📝 HTML Basics Quiz</h2>
+      <p>Q1: What does the &lt;h1&gt; tag represent in HTML?</p>
+      <form id="quiz-form">
+        <label><input type="radio" name="answer" value="a" /> A paragraph</label><br />
+        <label><input type="radio" name="answer" value="b" /> A hyperlink</label><br />
+        <label><input type="radio" name="answer" value="c" /> A top-level heading</label><br />
+        <label><input type="radio" name="answer" value="d" /> An image</label><br />
+        <button type="button" onclick="checkAnswer()">Submit</button>
+      </form>
+      <p id="result"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+
+  <script>
+    function checkAnswer() {
+      const form = document.getElementById("quiz-form");
+      const selected = form.answer.value;
+      const result = document.getElementById("result");
+
+      if (selected === "c") {
+        result.textContent = "✅ Correct!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "❌ Wrong. The correct answer is: A top-level heading.";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>

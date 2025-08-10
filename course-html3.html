@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - HTML Forms and Tables</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>Forms and Tables</h2>
+      <p>Forms are used to collect user input, and tables are used to display data in a structured way.</p>
+
+      <h3>1. HTML Form Example</h3>
+      <pre>
+&lt;form action="/submit" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+      </pre>
+
+      <h4>Output:</h4>
+      <form action="/submit" method="post" style="border:1px solid #ccc; padding:10px; display:inline-block;">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <h3 style="margin-top:30px;">2. HTML Table Example</h3>
+      <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+    &lt;th&gt;Country&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alice&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+    &lt;td&gt;USA&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Bob&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+    &lt;td&gt;UK&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+      </pre>
+
+      <h4>Output:</h4>
+      <table border="1" style="border-collapse: collapse;">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alice</td>
+          <td>25</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>30</td>
+          <td>UK</td>
+        </tr>
+      </table>
+
+      <!-- Navigation Buttons -->
+      <div style="display: flex; justify-content: space-between; margin-top: 40px;">
+  <a href="course-html2.html" class="next-button">Back</a>
+  <a href="course-html4.html" class="next-button">Next</a>
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

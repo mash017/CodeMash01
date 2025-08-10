@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - JavaScript 101 (Variables)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>JavaScript 101 - Variables</h2>
+      <p>In JavaScript, <strong>variables</strong> are used to store data values such as numbers, text, or more complex data.  
+      You can declare variables using <code>var</code>, <code>let</code>, or <code>const</code>.</p>
+
+      <h3>Types of Variables:</h3>
+      <ul>
+        <li><strong>var</strong> – Old way of declaring variables (function-scoped).</li>
+        <li><strong>let</strong> – Modern way for variables that can change (block-scoped).</li>
+        <li><strong>const</strong> – For values that should never change (block-scoped).</li>
+      </ul>
+
+      <h3>Example:</h3>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;script&gt;
+      let name = "Mash";
+      const year = 2025;
+      var age = 20;
+
+      document.write("Name: " + name + "&lt;br&gt;");
+      document.write("Year: " + year + "&lt;br&gt;");
+      document.write("Age: " + age);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="padding: 10px; background-color: #f5f5f5;">
+        Name: Mash<br>
+        Year: 2025<br>
+        Age: 20
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-js1.html" class="next-button">Back</a>
+        <a href="course-js3.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

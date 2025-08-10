@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - CSS Colors & Text</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>CSS Colors & Text Styling</h2>
+      <p>CSS provides many properties to style text and apply colors for visual impact and readability.</p>
+
+      <h3>1. Colors</h3>
+      <p>You can use color names, HEX codes, RGB, or HSL values.</p>
+      <pre>
+h1 { color: red; }
+p { color: #333; }
+button { background-color: rgb(0, 0, 0); color: white; }
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="padding:12px;">
+        <h1 style="color:red; margin:0;">Red Heading</h1>
+        <p style="color:#333;">This is a paragraph with dark gray text.</p>
+        <button style="background:black; color:white; border:none; padding:6px 12px; border-radius:4px;">Black Button</button>
+      </div>
+
+      <h3 style="margin-top:20px;">2. Text Styling</h3>
+      <pre>
+h1 { font-family: Arial, sans-serif; font-size: 28px; font-weight: bold; }
+p { font-style: italic; line-height: 1.6; letter-spacing: 1px; }
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="padding:12px;">
+        <h1 style="font-family:Arial, sans-serif; font-size:28px; font-weight:bold; margin:0;">Styled Heading</h1>
+        <p style="font-style:italic; line-height:1.6; letter-spacing:1px;">
+          This paragraph uses italic style, increased line height, and extra letter spacing.
+        </p>
+      </div>
+
+      <h3 style="margin-top:20px;">3. Text Alignment</h3>
+      <pre>
+.center { text-align: center; }
+.right { text-align: right; }
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="padding:12px;">
+        <p style="text-align:center; margin:0;">This is centered text.</p>
+        <p style="text-align:right; margin:0;">This is right-aligned text.</p>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-css.html" class="next-button">Back</a>
+        <a href="course-css2.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

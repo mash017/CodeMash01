@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - CSS Text Styling</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>CSS Text Styling</h2>
+      <p>CSS provides various properties to style text, such as changing fonts, size, color, spacing, and alignment.</p>
+
+      <h3>1. Changing Text Color & Font</h3>
+      <pre>
+p {
+  color: blue;
+  font-family: Arial, sans-serif;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <p style="color: blue; font-family: Arial, sans-serif;">
+        This is blue text with Arial font.
+      </p>
+
+      <h3 style="margin-top:20px;">2. Font Size</h3>
+      <pre>
+h1 {
+  font-size: 36px;
+}
+p {
+  font-size: 18px;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <h1 style="font-size:36px;">Large Heading</h1>
+      <p style="font-size:18px;">Regular paragraph text.</p>
+
+      <h3 style="margin-top:20px;">3. Text Alignment</h3>
+      <pre>
+h2 {
+  text-align: center;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <h2 style="text-align:center;">Centered Text</h2>
+
+      <h3 style="margin-top:20px;">4. Text Decoration</h3>
+      <pre>
+a {
+  text-decoration: none;
+  color: red;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <a href="#" style="text-decoration:none; color:red;">Styled Link</a>
+
+      <h3 style="margin-top:20px;">5. Text Transform</h3>
+      <pre>
+p {
+  text-transform: uppercase;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <p style="text-transform:uppercase;">this text is uppercase</p>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-css3.html" class="next-button">Back</a>
+        <a href="course-css5.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

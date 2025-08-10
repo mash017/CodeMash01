@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMash - React Props</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>Props in React</h2>
+      <p>
+        Props (short for <strong>properties</strong>) are used to pass data from one component to another. They are read-only and help make components reusable.
+      </p>
+
+      <h3>Example: Passing Props</h3>
+      <pre>
+import React from 'react';
+
+function Greeting(props) {
+  return &lt;h1&gt;Hello, {props.name}!&lt;/h1&gt;;
+}
+
+function App() {
+  return (
+    &lt;div&gt;
+      &lt;Greeting name="Mash" /&gt;
+      &lt;Greeting name="Alex" /&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="padding: 10px; background-color: #f5f5f5;">
+        Hello, Mash!<br>
+        Hello, Alex!
+      </div>
+
+      <h3>Key Points</h3>
+      <ul>
+        <li>Props are passed like HTML attributes</li>
+        <li>Props are immutable (cannot be changed inside the child component)</li>
+        <li>Use props to make components dynamic</li>
+      </ul>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-react1.html" class="next-button">Back</a>
+        <a href="course-react3.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

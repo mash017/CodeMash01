@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - HTML Basics</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .btn {
+      background-color: #000;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #333;
+    }
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>HTML Basics</h2>
+      <p>HTML (HyperText Markup Language) is the main language used to create web pages. It helps us build the structure of a web page. Below are some basic HTML tags:</p>
+
+      <h3>1. HTML Document Structure</h3>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+
+      <h3>2. Common HTML Tags</h3>
+      <ul>
+        <li><strong>&lt;h1&gt; ... &lt;h6&gt;</strong> : Heading tags, with h1 being the largest.</li>
+        <li><strong>&lt;p&gt;</strong> : For paragraphs.</li>
+        <li><strong>&lt;a href="URL"&gt;</strong> : To create links.</li>
+        <li><strong>&lt;img src="image.jpg" alt="description"&gt;</strong> : To display images.</li>
+        <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong> : For creating lists.</li>
+      </ul>
+
+      <h3> Example Code</h3>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to CodeMash&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+    &lt;a href="https://www.codemash.com"&gt;Visit CodeMash&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+
+      <div class="nav-buttons">
+        <a href="codemash0.html" class="btn">&larr; Back</a>
+        <a href="course-html1.html" class="btn">Next &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

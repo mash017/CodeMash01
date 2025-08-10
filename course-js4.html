@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - JavaScript 101 (Operators)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>JavaScript 101 - Operators</h2>
+      <p>Operators in JavaScript are used to perform actions on values and variables.</p>
+
+      <h3>Types of Operators:</h3>
+      <ul>
+        <li><strong>Arithmetic</strong> – <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code></li>
+        <li><strong>Assignment</strong> – <code>=</code>, <code>+=</code>, <code>-=</code></li>
+        <li><strong>Comparison</strong> – <code>==</code>, <code>===</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code></li>
+        <li><strong>Logical</strong> – <code>&amp;&amp;</code>, <code>||</code>, <code>!</code></li>
+      </ul>
+
+      <h3>Example:</h3>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;script&gt;
+      let a = 10, b = 5;
+
+      document.write("Addition: " + (a + b) + "&lt;br&gt;");
+      document.write("Subtraction: " + (a - b) + "&lt;br&gt;");
+      document.write("Multiplication: " + (a * b) + "&lt;br&gt;");
+      document.write("Division: " + (a / b) + "&lt;br&gt;");
+      document.write("Is a greater than b? " + (a > b) + "&lt;br&gt;");
+      document.write("Both positive? " + ((a > 0) && (b > 0)));
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="padding: 10px; background-color: #f5f5f5;">
+        Addition: 15<br>
+        Subtraction: 5<br>
+        Multiplication: 50<br>
+        Division: 2<br>
+        Is a greater than b? true<br>
+        Both positive? true
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-js3.html" class="next-button">Back</a>
+        <a href="course-js5.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

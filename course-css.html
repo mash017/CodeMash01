@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - CSS Fundamentals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>CSS Fundamentals</h2>
+      <p>CSS (Cascading Style Sheets) is used to control the presentation of HTML — colors, spacing, layout, fonts and more.</p>
+
+      <h3>1. CSS Syntax</h3>
+      <pre>
+selector {
+  property: value;
+  property: value;
+}
+      </pre>
+      <h4>Example:</h4>
+      <pre>
+&lt;style&gt;
+  body { background: #f7f7f7; font-family: Arial; }
+  .card { background: white; padding: 12px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+  .card h3 { color: #222; margin: 0 0 8px; }
+&lt;/style&gt;
+
+&lt;div class="card"&gt;
+  &lt;h3&gt;Styled Card&lt;/h3&gt;
+  &lt;p&gt;This is a simple CSS example.&lt;/p&gt;
+&lt;/div&gt;
+      </pre>
+
+      <h4>Output:</h4>
+      <div class="example-output" style="padding:12px;">
+        <div style="background:white; padding:12px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.05); display:inline-block;">
+          <h3 style="margin:0 0 8px; color:#222;">Styled Card</h3>
+          <p style="margin:0;">This is a simple CSS example.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:20px;">2. Selectors &amp; Box Model</h3>
+      <pre>
+/* selector examples */
+h1 { font-size: 28px; }
+#main { width: 800px; margin: 0 auto; }
+.container p { color: #555; }
+
+/* box model: padding, border, margin */
+.box { padding: 10px; border: 1px solid #ddd; margin: 10px 0; }
+      </pre>
+
+      <h4>Example Output:</h4>
+      <div class="example-output" style="padding:12px;">
+        <div style="padding:10px; border:1px solid #ddd; margin:10px 0; display:inline-block;">
+          <strong>Box model demo</strong>
+          <p style="margin:8px 0 0 0;">Padding, border and margin example.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:20px;">3. Basic Layout (Flexbox)</h3>
+      <pre>
+.container {
+  display: flex;
+  gap: 12px;
+}
+.box { flex: 1; padding: 12px; background: #fff; border-radius: 6px; }
+      </pre>
+
+      <h4>Output:</h4>
+      <div class="example-output" style="padding:12px;">
+        <div style="display:flex; gap:12px; max-width:600px;">
+          <div style="flex:1; padding:12px; background:#fff; border-radius:6px; box-shadow:0 1px 4px rgba(0,0,0,0.04);">Column 1</div>
+          <div style="flex:1; padding:12px; background:#fff; border-radius:6px; box-shadow:0 1px 4px rgba(0,0,0,0.04);">Column 2</div>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons: Back (left) and Next (right) -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="codemash0.html" class="next-button">Back</a>
+        <a href="course-css1.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

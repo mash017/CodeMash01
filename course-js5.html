@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - JavaScript 101 (Conditional Statements)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>JavaScript 101 - Conditional Statements</h2>
+      <p>Conditional statements allow you to execute certain blocks of code based on a condition.</p>
+
+      <h3>Types of Conditional Statements:</h3>
+      <ul>
+        <li><strong>if</strong> – Runs a block if the condition is true.</li>
+        <li><strong>if...else</strong> – Runs one block if the condition is true, another if false.</li>
+        <li><strong>else if</strong> – Checks multiple conditions.</li>
+      </ul>
+
+      <h3>Example:</h3>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;script&gt;
+      let marks = 85;
+
+      if (marks >= 90) {
+        document.write("Grade: A+");
+      } else if (marks >= 80) {
+        document.write("Grade: A");
+      } else if (marks >= 70) {
+        document.write("Grade: B");
+      } else {
+        document.write("Grade: C or below");
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="padding: 10px; background-color: #f5f5f5;">
+        Grade: A
+      </div>
+
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+  <a href="course-js4.html" class="next-button">Back</a>
+  <a href="#" class="next-button" onclick="alert('Update is coming soon!')">Next</a>
+</div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

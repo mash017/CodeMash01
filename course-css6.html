@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - CSS Box Model</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>CSS Box Model</h2>
+      <p>The CSS Box Model describes how every HTML element is represented as a rectangular box, consisting of:</p>
+      <ul>
+        <li><strong>Content</strong> – The text, images, or other elements inside the box.</li>
+        <li><strong>Padding</strong> – The space between the content and the border.</li>
+        <li><strong>Border</strong> – The line surrounding the padding (optional).</li>
+        <li><strong>Margin</strong> – The space outside the border, separating the element from others.</li>
+      </ul>
+
+      <h3>Example</h3>
+      <pre>
+div {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 30px;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="width:200px; padding:20px; border:5px solid black; margin:30px; background-color:lightyellow;">
+        Box Model Example
+      </div>
+
+      <h3>Visual Representation</h3>
+      <p>(Content → Padding → Border → Margin)</p>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-css5.html" class="next-button">Back</a>
+        <a href="course-css7.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

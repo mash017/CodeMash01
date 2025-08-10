@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMash - React State</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>State in React</h2>
+      <p>
+        State is a built-in object in React that allows components to create and manage their own data. When the state changes, the component automatically re-renders.
+      </p>
+
+      <h3>Example: Using State</h3>
+      <pre>
+import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Count: {count}&lt;/h1&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;Increase&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default Counter;
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="padding: 10px; background-color: #f5f5f5;">
+        Count: 0<br>
+        <em>(Click "Increase" to update the count)</em>
+      </div>
+
+      <h3>Key Points</h3>
+      <ul>
+        <li>State is managed within the component</li>
+        <li>Changing state triggers a re-render</li>
+        <li>useState is a Hook used for managing state in functional components</li>
+      </ul>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-react2.html" class="next-button">Back</a>
+        <a href="course-react4.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

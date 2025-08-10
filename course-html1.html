@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - HTML Lists</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .btn {
+      background-color: #000;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #333;
+    }
+    .example-output {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      margin-top: 8px;
+      margin-bottom: 25px;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>HTML Lists</h2>
+      <p>HTML provides two main types of lists to organize content:</p>
+      <ul>
+        <li><strong>Ordered List (&lt;ol&gt;)</strong>: Displays items in a numbered sequence.</li>
+        <li><strong>Unordered List (&lt;ul&gt;)</strong>: Displays items with bullet points.</li>
+        <li><strong>Definition List (&lt;dl&gt;)</strong>: Defines terms and descriptions.</li>
+      </ul>
+
+      <h3>1. Ordered List Example</h3>
+      <pre>
+&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+      </pre>
+      <div class="example-output">
+        <ol>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ol>
+      </div>
+
+      <h3>2. Unordered List Example</h3>
+      <pre>
+&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+  &lt;li&gt;Cherry&lt;/li&gt;
+&lt;/ul&gt;
+      </pre>
+      <div class="example-output">
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Cherry</li>
+        </ul>
+      </div>
+
+      <h3>3. Definition List Example</h3>
+      <pre>
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;
+      </pre>
+      <div class="example-output">
+        <dl>
+          <dt>HTML</dt>
+          <dd>HyperText Markup Language</dd>
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets</dd>
+        </dl>
+      </div>
+
+      <!-- Back and Next Buttons -->
+      <div style="margin-top: 30px; display: flex; justify-content: space-between;">
+        <a href="course-html.html" class="btn">&larr; Back</a>
+        <a href="course-html2.html" class="btn">Next &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

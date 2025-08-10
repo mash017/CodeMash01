@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - HTML Semantic Elements</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .btn {
+      background-color: #000;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #333;
+    }
+    .example-output {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      margin-top: 8px;
+      margin-bottom: 25px;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      color: #333;
+      overflow-x: auto;
+    }
+    header, nav, main, footer {
+      
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>HTML Semantic Elements</h2>
+      <p>Semantic elements clearly describe their meaning in a human- and machine-readable way. They help structure your HTML document and improve accessibility and SEO.</p>
+
+      <h3>Common Semantic Elements</h3>
+      <ul>
+        <li><code>&lt;header&gt;</code> - Represents introductory content or navigation links.</li>
+        <li><code>&lt;nav&gt;</code> - Contains the navigation menu.</li>
+        <li><code>&lt;main&gt;</code> - The main content of the document.</li>
+        <li><code>&lt;section&gt;</code> - Groups related content.</li>
+        <li><code>&lt;article&gt;</code> - Independent, self-contained content.</li>
+        <li><code>&lt;footer&gt;</code> - Contains footer information.</li>
+      </ul>
+
+      <h3>Example</h3>
+      <pre>
+&lt;header&gt;
+  &lt;h1&gt;My Blog&lt;/h1&gt;
+&lt;/header&gt;
+&lt;nav&gt;
+  &lt;a href="#"&gt;Home&lt;/a&gt; | 
+  &lt;a href="#"&gt;About&lt;/a&gt;
+&lt;/nav&gt;
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Blog Post Title&lt;/h2&gt;
+    &lt;p&gt;This is the content of the blog post.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+  &lt;p&gt;&copy; 2025 My Blog&lt;/p&gt;
+&lt;/footer&gt;
+      </pre>
+
+      <div class="example-output">
+        <header>
+          <h1>My Blog</h1>
+        </header>
+        <nav>
+          <a href="#">Home</a> | <a href="#">About</a>
+        </nav>
+        <main>
+          <article>
+            <h2>Blog Post Title</h2>
+            <p>This is the content of the blog post.</p>
+          </article>
+        </main>
+        <footer>
+          <p>&copy; 2025 My Blog</p>
+        </footer>
+      </div>
+
+      <div style="margin-top: 30px; display: flex; justify-content: space-between;">
+        <a href="course-html6.html" class="btn">Back</a>
+        <a href="course-html8.html" class="btn">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

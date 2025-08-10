@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - CSS Positioning</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>CSS Positioning</h2>
+      <p>CSS Positioning allows you to control exactly where elements appear on the page. The main position values are:</p>
+      <ul>
+        <li><strong>static</strong> – Default position, elements appear in normal flow.</li>
+        <li><strong>relative</strong> – Positioned relative to its normal position.</li>
+        <li><strong>absolute</strong> – Positioned relative to the nearest positioned ancestor.</li>
+        <li><strong>fixed</strong> – Positioned relative to the viewport and doesn’t move when scrolling.</li>
+        <li><strong>sticky</strong> – Switches between relative and fixed depending on scroll position.</li>
+      </ul>
+
+      <h3>Example</h3>
+      <pre>
+.box {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  background-color: lightblue;
+  padding: 10px;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="position: relative; height:150px; background-color:#f0f0f0;">
+        <div style="position:absolute; top:50px; left:100px; background-color:lightblue; padding:10px;">
+          Positioned Box
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-css6.html" class="next-button">Back</a>
+        <a href="course-css8.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

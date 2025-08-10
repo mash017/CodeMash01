@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - CSS Backgrounds & Borders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>CSS Backgrounds & Borders</h2>
+      <p>CSS gives us control over the background colors, images, and borders of elements.</p>
+
+      <h3>1. Background Color</h3>
+      <pre>
+div {
+  background-color: lightblue;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="background-color:lightblue; padding:15px; border-radius:5px;">
+        This box has a light blue background.
+      </div>
+
+      <h3 style="margin-top:20px;">2. Background Image</h3>
+      <pre>
+div {
+  background-image: url('background.jpg');
+  background-size: cover;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="background-image:url('https://via.placeholder.com/300x100'); background-size:cover; padding:15px; color:white; border-radius:5px;">
+        This box has a background image.
+      </div>
+
+      <h3 style="margin-top:20px;">3. Borders</h3>
+      <pre>
+div {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="border: 2px solid black; border-radius: 10px; padding:15px;">
+        This box has a solid border and rounded corners.
+      </div>
+
+      <h3 style="margin-top:20px;">4. Gradients</h3>
+      <pre>
+div {
+  background: linear-gradient(to right, red, yellow);
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="background:linear-gradient(to right, red, yellow); padding:15px; border-radius:5px;">
+        This box has a gradient background.
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-css1.html" class="next-button">Back</a>
+        <a href="course-css3.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

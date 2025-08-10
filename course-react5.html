@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMash - Props vs State</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>React Props vs State</h2>
+      <p>
+        In React, <strong>props</strong> and <strong>state</strong> are two important concepts 
+        for managing data in components.
+      </p>
+
+      <h3>Props (Properties)</h3>
+      <ul>
+        <li>Passed from a parent component to a child component.</li>
+        <li>Read-only — cannot be modified by the child component.</li>
+        <li>Used for dynamic data and configuration.</li>
+      </ul>
+
+      <h3>State</h3>
+      <ul>
+        <li>Managed within the component itself.</li>
+        <li>Can be updated using <code>setState</code> or the <code>useState</code> Hook.</li>
+        <li>Used for data that changes over time.</li>
+      </ul>
+
+      <h3>Example</h3>
+      <pre>
+import React, { useState } from 'react';
+
+function Greeting({ name }) {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Hello, {name}!&lt;/h1&gt;
+      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;Click Me&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+// Usage
+&lt;Greeting name="Mash" /&gt;
+      </pre>
+
+      <h4>Key Differences:</h4>
+      <table border="1" cellpadding="8" style="border-collapse: collapse;">
+        <tr>
+          <th>Props</th>
+          <th>State</th>
+        </tr>
+        <tr>
+          <td>Immutable</td>
+          <td>Mutable</td>
+        </tr>
+        <tr>
+          <td>Passed from parent</td>
+          <td>Managed within component</td>
+        </tr>
+        <tr>
+          <td>Static for the component</td>
+          <td>Can change dynamically</td>
+        </tr>
+      </table>
+
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+  <a href="course-react4.html" class="next-button">Back</a>
+  <a href="#" class="next-button" onclick="alert('Update is coming soon!')">Next</a>
+</div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

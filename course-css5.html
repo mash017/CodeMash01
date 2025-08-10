@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - CSS Backgrounds & Borders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>CSS Backgrounds & Borders</h2>
+      <p>CSS allows you to add backgrounds and borders to elements to improve design and structure.</p>
+
+      <h3>1. Background Color</h3>
+      <pre>
+div {
+  background-color: lightblue;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="background-color:lightblue; padding:10px;">
+        This div has a light blue background.
+      </div>
+
+      <h3 style="margin-top:20px;">2. Background Image</h3>
+      <pre>
+div {
+  background-image: url('example.jpg');
+  background-size: cover;
+}
+      </pre>
+      <p>(Image not displayed here; you can use any image URL.)</p>
+
+      <h3 style="margin-top:20px;">3. Border Styles</h3>
+      <pre>
+p {
+  border: 2px solid black;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <p style="border:2px solid black; padding:5px;">This paragraph has a black border.</p>
+
+      <h3 style="margin-top:20px;">4. Rounded Borders</h3>
+      <pre>
+div {
+  border: 2px solid green;
+  border-radius: 10px;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="border:2px solid green; border-radius:10px; padding:10px;">
+        Rounded border example.
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-css4.html" class="next-button">Back</a>
+        <a href="course-css6.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

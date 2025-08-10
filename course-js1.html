@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - JavaScript 101</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    pre {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    .example-output {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      margin-top: 8px;
+      margin-bottom: 25px;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      color: #333;
+      overflow-x: auto;
+    }
+    .next-button {
+      background-color: #000;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .next-button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>JavaScript 101</h2>
+      <p>JavaScript is a programming language used to create dynamic and interactive elements on web pages. It works alongside HTML and CSS to enhance user experience.</p>
+
+      <h3>Example:</h3>
+      <pre>
+&lt;script&gt;
+    function greet() {
+        alert("Hello, welcome to JavaScript 101!");
+    }
+&lt;/script&gt;
+
+&lt;button onclick="greet()"&gt;Click Me&lt;/button&gt;
+      </pre>
+
+      <h4>Output:</h4>
+      <div class="example-output">
+        <button onclick="alert('Hello, welcome to JavaScript 101!')">Click Me</button>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="codemash0.html" class="next-button">Back</a>
+        <a href="course-js2.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

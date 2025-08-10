@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMash - Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="playground.html">Playground</a>
+         <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="playground-container">
+      <h2>💻 Code Playground</h2>
+      <div class="code-editor">
+        <textarea id="code" placeholder="Write HTML, CSS, or JavaScript..."></textarea>
+        <button class="run-button" onclick="runCode()">Run Code</button>
+        <iframe id="output"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+
+  <script>
+    function runCode() {
+      const code = document.getElementById("code").value;
+      const output = document.getElementById("output");
+      output.srcdoc = code;
+    }
+  </script>
+</body>
+</html>

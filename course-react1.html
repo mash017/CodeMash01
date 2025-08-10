@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMash - React JSX & Components</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>React JSX & Components</h2>
+      <p>
+        JSX is a syntax extension for JavaScript that looks similar to HTML. It is used in React to describe what the UI should look like.  
+        Components are the building blocks of a React app, and they can be functional or class-based.
+      </p>
+
+      <h3>Example: Functional Component with JSX</h3>
+      <pre>
+import React from 'react';
+
+function Greeting() {
+  const name = "Mash";
+  return &lt;h1&gt;Hello, {name}!&lt;/h1&gt;;
+}
+
+export default Greeting;
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="padding: 10px; background-color: #f5f5f5;">
+        Hello, Mash!
+      </div>
+
+      <h3>Key Points</h3>
+      <ul>
+        <li>JSX must return a single parent element</li>
+        <li>Use curly braces <code>{}</code> to insert JavaScript expressions</li>
+        <li>Component names must start with a capital letter</li>
+      </ul>
+
+      <!-- Navigation Buttons -->
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <a href="course-react.html" class="next-button">Back</a>
+        <a href="course-react2.html" class="next-button">Next</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>

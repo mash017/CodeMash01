@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeMash - CSS Flexbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">CodeMash</h1>
+      <nav>
+        <a href="codemash.html">Home</a>
+        <a href="codemash0.html">Courses</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses" style="max-width: 800px; margin: 40px auto; text-align: left;">
+      <h2>CSS Flexbox</h2>
+      <p>Flexbox is a CSS layout module that makes it easy to design flexible and responsive layouts. It helps distribute space and align items within a container.</p>
+
+      <h3>Main Properties:</h3>
+      <ul>
+        <li><strong>display: flex;</strong> – Enables flexbox on a container.</li>
+        <li><strong>flex-direction</strong> – Row or column layout.</li>
+        <li><strong>justify-content</strong> – Aligns items horizontally (start, center, space-between).</li>
+        <li><strong>align-items</strong> – Aligns items vertically.</li>
+        <li><strong>flex-wrap</strong> – Wraps items onto multiple lines.</li>
+      </ul>
+
+      <h3>Example</h3>
+      <pre>
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+}
+
+.item {
+  background-color: lightcoral;
+  padding: 20px;
+  margin: 5px;
+  color: white;
+}
+      </pre>
+
+      <h4>Output:</h4>
+      <div style="display:flex; justify-content:space-between; background-color:#ddd; padding:10px;">
+        <div style="background-color:lightcoral; padding:20px; color:white;">Item 1</div>
+        <div style="background-color:lightcoral; padding:20px; color:white;">Item 2</div>
+        <div style="background-color:lightcoral; padding:20px; color:white;">Item 3</div>
+      </div>
+
+      
+<div style="display:flex; justify-content:space-between; margin-top:40px;">
+  <a href="course-css7.html" class="next-button">Back</a>
+  <a href="#" class="next-button" onclick="alert('Update is coming soon!')">Next</a>
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px;">&copy; 2025 CodeMash | All rights reserved</p>
+  </footer>
+</body>
+</html>
